@@ -56,7 +56,7 @@ export const HomePage = ({countries, setCountries}) => {
               ],
             };
             return (
-              <Card key={c.name} {...countryInfo} onClick={() => navigate(`/country/${c.name}`, {state: c})}/>
+              <Card key={c.name} {...countryInfo} onClick={() => navigate(`/country/${c.name}`, {state: c.name})}/>
             )
           })
         }
