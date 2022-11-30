@@ -16,7 +16,7 @@ function App() {
     <Header></Header>
     <Main>
       <Routes>
-        <Route path='/' element={<HomePage countries={countries} setCountries={setCountries} />} />
+        <Route path='/countries-spa' element={<HomePage countries={countries} setCountries={setCountries} />} />
         <Route path='country/:name' element={<Details />} />
         <Route element={<NotFound />}/>
       </Routes>
